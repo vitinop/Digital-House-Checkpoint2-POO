@@ -2,9 +2,11 @@ package entities;
 
 public class Professor implements Notas{
 
+    //Construtor Padrão
     public Professor() {
     }
 
+    //Acesso da interface notas
     public boolean acessNotas() {
         if (NotasLista.size() != 0) {
             for (int i = 0; i < NotasLista.size(); i++) {
@@ -16,6 +18,8 @@ public class Professor implements Notas{
         return false;
     }
 
+
+    //Inserção das notas através de lista
     @Override
     public void cadNotasLista() {
 

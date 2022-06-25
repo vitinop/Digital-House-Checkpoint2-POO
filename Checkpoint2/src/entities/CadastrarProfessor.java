@@ -2,18 +2,23 @@ package entities;
 
 public class CadastrarProfessor {
 
+        //Declaração de atributos
         private String nome;
         private String formacaoAcademica;
 
+       //Construtor padrão
         public CadastrarProfessor() {
 
         }
 
+
+        //Construtor com sobrecarga
         public CadastrarProfessor(String nome, String formacaoAcademica) {
             this.nome = nome;
             this.formacaoAcademica = formacaoAcademica;
         }
 
+       //Getters and Setters
         public String getNome() {
             return nome;
         }
@@ -30,12 +35,12 @@ public class CadastrarProfessor {
             this.formacaoAcademica = formacaoAcademica;
         }
 
+        //Métodos Customizados
         @Override
         public String toString() {
-            return
+            return'{'+
                     "Nome: " + nome + '\n' +
                     "FormacaoAcademica: " + formacaoAcademica + '\n' +
-
                     '}';
         }
 

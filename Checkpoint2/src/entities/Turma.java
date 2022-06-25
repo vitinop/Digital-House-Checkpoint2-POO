@@ -2,11 +2,11 @@ package entities;
 
 public abstract class Turma{
 
-    //declaração de atributos
+    //Declaração de atributos
     public String serieTurma;
     public int anoTurma;
 
-
+    //Construtor Padrão
     public Turma() {
     }
 
@@ -37,7 +37,6 @@ public abstract class Turma{
 
 
     //Métodos Customizados
-
 
     @Override
     public String toString() {

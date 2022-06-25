@@ -12,7 +12,8 @@ public class Program {
 
         //Interação com o usuário Aluno
         Scanner cdt = new Scanner(System.in);
-        System.out.println("Area de cadastro de Aluno");
+        System.out.println("_______Area de cadastro de Aluno_______");
+        System.out.println("");
         System.out.print("Por favor insira seu Nome: ");
         String nome = cdt.nextLine();
         System.out.println("Escreva a série da turma: ");
@@ -27,17 +28,19 @@ public class Program {
         System.out.println(aluno);
         System.out.println("");
                 //Interação com o usuário Professor
-        System.out.println("Area de cadastro do professor");
-        System.out.print("Por favor insira seu Nome: ");
-        String nomeProfessor = cdt.nextLine();
+        Scanner prof = new Scanner(System.in);
+        System.out.println("_______Area de cadastro de Professor_______");
         System.out.println("");
-        System.out.println("Por favor escreva o ano letivo da turma: ");
-        String materiaProfessor = cdt.nextLine();
-        System.out.println("Bem vindo: " + nomeProfessor.toUpperCase());
+        System.out.print("Por favor insira seu Nome: ");
+        nome = prof.nextLine();
+        System.out.println("Por favor escreva a sua matéria: ");
+        String materiaProfessor= prof.nextLine();
+
+        System.out.println("Bem vindo(a): " + nome.toUpperCase());
 
 
                     //Instanciação dinâmica do Obj.Professor
-        CadastrarProfessor professor = new CadastrarProfessor(nomeProfessor, materiaProfessor);
+        CadastrarProfessor professor = new CadastrarProfessor(nome, materiaProfessor);
         System.out.println("");
         System.out.println(professor);
 
@@ -51,6 +54,7 @@ public class Program {
         aluno1.acessNotas();
 
         cdt.close();
+        prof.close();
     }
 
 
